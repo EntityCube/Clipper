@@ -4,7 +4,7 @@ body {
 padding:0px;
 margin:0px;
 min-height: 100%;
-background: #e74c3c;
+background: #ff7f50;
 
 overflow: hidden;
 }
@@ -18,15 +18,15 @@ overflow: hidden;
 	padding-left:1%;
 	padding-right:1%;
 	position: fixed;
-	background: #ecf0f1;
-	color: #2c3e50;
+	background: #dfe4ea;
+	color: #202020;
 	font-size: 9px;
 	font-family: varela;
 	width: 90%;
 	min-height: 90%;
 	max-height: 90%;
 	overflow: auto;
-	box-shadow: 8px 8px #bdc3c7;
+	box-shadow: 8px 8px #747d8c;
 
     scrollbar-width: none;
 }
@@ -145,7 +145,7 @@ font-family: varela
 	height: 100px;
 	width: 100%;
 	font-size: 200%;
-	background: #2b2b2b;
+	background: #1e272e;
 	color: #FFF;
 	border: none;
 	resize: none;
