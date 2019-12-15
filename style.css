@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Varela&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
 
 body {
 padding:0px;
@@ -19,8 +20,8 @@ overflow: hidden;
 	padding-left:1%;
 	padding-right:1%;
 	position: fixed;
-	background: #393e46;
-	color: #f3f3e1;
+	background: #252a34;
+	color: #ffffff;
 	font-size: 9px;
 	font-family: Roboto;
 	width: 90%;
@@ -40,14 +41,14 @@ overflow: hidden;
 #Board {
 	overflow-wrap:break-word;
 	padding-bottom:110px;
+	font-weight: bolder;
 }
 *:focus {
     outline: none;
 }
 
 .EnterMSG {
-	border-top: solid 1px yellow;
-	border-bottom: solid 1px yellow;
+	border-top: solid 2px yellow;
 	position: fixed;
 	width: 92%;
 	left: 4%;
@@ -109,7 +110,8 @@ overflow: hidden;
 transition-duration: 200ms;
 margin:0px;
 padding:0px;
-font-family: roboto
+/* font-family: roboto */
+font-family: 'Maven Pro', san-serif;
 }
 
 .EnterMSG #CopyBtn:hover {
@@ -151,7 +153,8 @@ font-family: roboto
 	height: 100px;
 	width: 100%;
 	font-size: 200%;
-	background: #222831;
+	font-weight: bolder;
+	background: #1e2022;
 	color: #FFF;
 	border: none;
 	resize: none;
@@ -170,6 +173,8 @@ font-family: roboto
 		height: 90px;
 		bottom: -1;
 		padding-right:40px;
+		font-size: 180%;
+		font-weight: bold;
 	}
 
 	.BoardWrapper #Board {
@@ -207,6 +212,8 @@ font-family: roboto
 		height: 90px;
 		bottom: 0;
 		padding-right:40px;
+		font-size: 180%;
+		font-weight: bold;
 	}
 
 	.BoardWrapper #Board {
