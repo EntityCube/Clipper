@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Varela&display=swap');
+
+body {
+padding:0px;
+margin:0px;
+min-height: 100%;
+background: #5290ed;
+
+overflow: hidden;
+}
+
+.BoardWrapper {
+	top: 4%;
+	left: 4%;
+	right: 4%;
+	margin: 0px;
+	padding-top: 1%;
+	padding-left:1%;
+	padding-right:1%;
+	position: fixed;
+	background:#2f3542;
+	color: white;
+	font-size: 9px;
+	font-family: varela;
+	width: 90%;
+	min-height: 90%;
+	max-height: 90%;
+	overflow: auto;
+	box-shadow: 8px 8px #1e2018;
+
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+#Board {
+	overflow-wrap:break-word;
+	padding-bottom:110px;
+}
+
+.EnterMSG {
+	position: fixed;
+	width: 92%;
+	left: 4%;
+	bottom: 3.9%;
+}
+
+.EnterMSG > #CopyBtn {
+	margin: 1%;
+	width: 28px;
+	height: 28px;
+	font-size: 150%;
+	border: none;
+	background-image: url(./external-content.duckduckgo.com.png);
+	background-size: 28px;
+	background-color: transparent;
+	position: absolute;
+	bottom: 50;
+	right: 4px;
+	padding: 3px;
+}
+
+.EnterMSG #UpdateBtn {
+	transition-duration: 0ms;
+	margin: 1%;
+	width: 28px;
+	height: 28px;
+	font-size: 150%;
+	color: #22a6b3;
+	border: none;
+	background-image: url(./send.png);
+	background-size: 28px;
+	background-color: transparent;
+	position: absolute;
+	bottom: 0;
+	right: 4px;
+	padding: 3px;
+	z-index: -1;
+}
+
+.EnterMSG #DimUpdateBtn {
+	margin: 1%;
+	width: 28px;
+	height: 28px;
+	font-size: 150%;
+	color: #22a6b3;
+	border: none;
+	background-image: url(./send-dim.png);
+	background-size: 28px;
+	background-color: transparent;
+	position: absolute;
+	bottom: 0;
+	right: 4px;
+	padding: 3px;
+	z-index: 0;
+}
+
+
+* {
+transition-duration: 200ms;
+margin:0px;
+padding:0px;
+font-family: varela
+}
+
+.EnterMSG #CopyBtn:hover {
+	background-color: #588ebbbd;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+
+.EnterMSG #UpdateBtn:hover {
+	background-color: #588ebbbd;
+	color: #00c3ff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.EnterMSG #DimUpdateBtn:hover {
+	background-color: #588ebbbd;
+	color: #00c3ff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+
+.EnterMSG  #NewTextInput {
+	margin: 0 0 0 0;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	height: 100px;
+	width: 100%;
+	font-size: 200%;
+	background: #2b2b2b;
+	color: #FFF;
+	border: none;
+	resize: none;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	padding-right:55px;
+
+    scrollbar-width: none;
+}
+
+@media (max-width: 769px) {
+	
+
+	.EnterMSG #NewTextInput {
+		height: 90px;
+		bottom: -1;
+		padding-right:40px;
+	}
+
+	.BoardWrapper #Board {
+		font-size: 16px;
+		padding-bottom:100px;
+	}
+	
+	.EnterMSG #CopyBtn {
+		background-size: 23px;
+		width: 23px;
+		height: 23px;
+		bottom: 55;
+	}
+	
+	.EnterMSG #UpdateBtn {
+		background-size: 23px;
+		width: 23px;
+		height: 23px;
+		bottom: 10;
+	}
+	
+	.EnterMSG #DimUpdateBtn {
+		background-size: 23px;
+		width: 23px;
+		height: 23px;
+		bottom: 10;
+	}
+
+}
+
+@media (max-width: 500px) {
+	
+
+	.EnterMSG #NewTextInput {
+		height: 90px;
+		bottom: 0;
+		padding-right:40px;
+	}
+
+	.BoardWrapper #Board {
+		font-size: 16px;
+		padding-bottom:100px;
+	}
+	
+	.EnterMSG #CopyBtn {
+		background-size: 23px;
+		width: 23px;
+		height: 23px;
+		bottom: 55;
+	}
+	
+	.EnterMSG #UpdateBtn {
+		background-size: 23px;
+		width: 23px;
+		height: 23px;
+		bottom: 10;
+	}
+
+	.EnterMSG #DimUpdateBtn {
+		background-size: 23px;
+		width: 23px;
+		height: 23px;
+		bottom: 10;
+	}
+}
